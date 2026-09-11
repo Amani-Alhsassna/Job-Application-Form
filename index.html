@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Tech Solutions - Job Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         WELCOME PAGE
+    ========================== -->
+
+    <section id="welcomePage" class="welcome-page">
+
+        <div class="welcome-card">
+
+            <div class="company-logo">
+                AI TECH
+            </div>
+
+            <h1>AI Tech Solutions</h1>
+
+            <h2>Build the Future With Us</h2>
+
+            <p class="company-description">
+                AI Tech Solutions is a technology company focused on
+                Artificial Intelligence, Software Development, Data,
+                and innovative digital solutions.
+            </p>
+
+            <div class="opportunities">
+
+                <div class="opportunity">
+                    <h3>Artificial Intelligence</h3>
+                    <p>
+                        Work on machine learning, AI applications,
+                        and intelligent systems.
+                    </p>
+                </div>
+
+                <div class="opportunity">
+                    <h3>Software Development</h3>
+                    <p>
+                        Build modern web applications and software
+                        solutions.
+                    </p>
+                </div>
+
+                <div class="opportunity">
+                    <h3>Data & Analytics</h3>
+                    <p>
+                        Transform data into useful insights and
+                        business decisions.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="email-section">
+
+                <label for="startEmail">
+                    Enter your email address to start your application
+                </label>
+
+                <input
+                    type="email"
+                    id="startEmail"
+                    placeholder="example@email.com"
+                >
+
+                <p id="emailError" class="error-message"></p>
+
+                <button
+                    type="button"
+                    id="continueButton"
+                    class="primary-button"
+                >
+                    Continue
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         APPLICATION
+    ========================== -->
+
+    <main id="application" class="application-container">
+
+        <div class="application-card">
+
+            <!-- Header -->
+
+            <div class="application-header">
+
+                <div class="company-logo small-logo">
+                    AI TECH
+                </div>
+
+                <div>
+                    <h1>Job Application</h1>
+                    <p>AI Tech Solutions</p>
+                </div>
+
+            </div>
+
+
+            <!-- Progress -->
+
+            <div class="progress-section">
+
+                <div class="progress-info">
+
+                    <span id="stepTitle">
+                        Personal Information
+                    </span>
+
+                    <span id="stepNumber">
+                        Step 1 of 6
+                    </span>
+
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+            </div>
+
+
+            <!-- Form -->
+
+            <form id="applicationForm">
+
+                <!-- =========================
+                     STEP 1
+                ========================== -->
+
+                <section class="form-step active" id="step1">
+
+                    <h2>Personal Information</h2>
+
+                    <p class="step-description">
+                        Tell us about yourself.
+                    </p>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                required
+                                placeholder="Enter your full name"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="example@email.com"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                                placeholder="0591234567"
+                                pattern="05[69][0-9]{7}"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="birthDate">
+                                Date of Birth *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="birthDate"
+                                name="birthDate"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="country">
+                                Country *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="country"
+                                name="country"
+                                required
+                                placeholder="Enter your country"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                required
+                                placeholder="Enter your city"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gender">
+                                Gender *
+                            </label>
+
+                            <select id="gender" name="gender" required>
+
+                                <option value="">
+                                    Select gender
+                                </option>
+
+                                <option value="female">
+                                    Female
+                                </option>
+
+                                <option value="male">
+                                    Male
+                                </option>
+
+                                <option value="prefer-not">
+                                    Prefer not to say
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="linkedin">
+                                LinkedIn Profile
+                            </label>
+
+                            <input
+                                type="url"
+                                id="linkedin"
+                                name="linkedin"
+                                placeholder="https://linkedin.com/in/yourname"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="github">
+                                GitHub Profile
+                            </label>
+
+                            <input
+                                type="url"
+                                id="github"
+                                name="github"
+                                placeholder="https://github.com/yourname"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     STEP 2
+                ========================== -->
+
+                <section class="form-step" id="step2">
+
+                    <h2>Education</h2>
+
+                    <p class="step-description">
+                        Tell us about your educational background.
+                    </p>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="university">
+                                University *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="university"
+                                name="university"
+                                required
+                                placeholder="University name"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="degree">
+                                Degree *
+                            </label>
+
+                            <select id="degree" name="degree" required>
+
+                                <option value="">
+                                    Select degree
+                                </option>
+
+                                <option value="bachelor">
+                                    Bachelor's Degree
+                                </option>
+
+                                <option value="master">
+                                    Master's Degree
+                                </option>
+
+                                <option value="phd">
+                                    PhD
+                                </option>
+
+                                <option value="diploma">
+                                    Diploma
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="major">
+                                Major *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="major"
+                                name="major"
+                                required
+                                placeholder="Computer Engineering"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gradYear">
+                                Graduation Year *
+                            </label>
+
+                            <select
+                                id="gradYear"
+                                name="gradYear"
+                                required
+                            >
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="academicStatus">
+                                Academic Status *
+                            </label>
+
+                            <select
+                                id="academicStatus"
+                                name="academicStatus"
+                                required
+                            >
+
+                                <option value="">
+                                    Select status
+                                </option>
+
+                                <option value="student">
+                                    Current Student
+                                </option>
+
+                                <option value="graduate">
+                                    Graduate
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gpa">
+                                GPA
+                            </label>
+
+                            <input
+                                type="number"
+                                id="gpa"
+                                name="gpa"
+                                min="0"
+                                max="4"
+                                step="0.01"
+                                placeholder="3.50"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="coursework">
+                                Relevant Coursework
+                            </label>
+
+                            <textarea
+                                id="coursework"
+                                name="coursework"
+                                placeholder="List relevant courses..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     STEP 3
+                ========================== -->
+
+                <section class="form-step" id="step3">
+
+                    <h2>Professional Information</h2>
+
+                    <p class="step-description">
+                        Tell us what kind of opportunity you are looking for.
+                    </p>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="jobRole">
+                                Desired Job Role *
+                            </label>
+
+                            <select
+                                id="jobRole"
+                                name="jobRole"
+                                required
+                            >
+
+                                <option value="">
+                                    Select job role
+                                </option>
+
+                                <option value="ai-engineer">
+                                    AI Engineer
+                                </option>
+
+                                <option value="ml-engineer">
+                                    Machine Learning Engineer
+                                </option>
+
+                                <option value="data-analyst">
+                                    Data Analyst
+                                </option>
+
+                                <option value="data-scientist">
+                                    Data Scientist
+                                </option>
+
+                                <option value="software-developer">
+                                    Software Developer
+                                </option>
+
+                                <option value="frontend-developer">
+                                    Front-End Developer
+                                </option>
+
+                                <option value="backend-developer">
+                                    Back-End Developer
+                                </option>
+
+                                <option value="intern">
+                                    Technology Intern
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="employmentType">
+                                Employment Type *
+                            </label>
+
+                            <select
+                                id="employmentType"
+                                name="employmentType"
+                                required
+                            >
+
+                                <option value="">
+                                    Select type
+                                </option>
+
+                                <option value="full-time">
+                                    Full-Time
+                                </option>
+
+                                <option value="part-time">
+                                    Part-Time
+                                </option>
+
+                                <option value="internship">
+                                    Internship
+                                </option>
+
+                                <option value="freelance">
+                                    Freelance
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="experience">
+                                Years of Experience *
+                            </label>
+
+                            <select
+                                id="experience"
+                                name="experience"
+                                required
+                            >
+
+                                <option value="">
+                                    Select experience
+                                </option>
+
+                                <option value="0">
+                                    No experience
+                                </option>
+
+                                <option value="less-1">
+                                    Less than 1 year
+                                </option>
+
+                                <option value="1-2">
+                                    1 - 2 years
+                                </option>
+
+                                <option value="3-5">
+                                    3 - 5 years
+                                </option>
+
+                                <option value="5+">
+                                    More than 5 years
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="availability">
+                                Availability *
+                            </label>
+
+                            <select
+                                id="availability"
+                                name="availability"
+                                required
+                            >
+
+                                <option value="">
+                                    Select availability
+                                </option>
+
+                                <option value="immediately">
+                                    Immediately
+                                </option>
+
+                                <option value="one-month">
+                                    Within one month
+                                </option>
+
+                                <option value="two-months">
+                                    Within two months
+                                </option>
+
+                                <option value="three-months">
+                                    Within three months
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="workPreference">
+                                Work Preference *
+                            </label>
+
+                            <select
+                                id="workPreference"
+                                name="workPreference"
+                                required
+                            >
+
+                                <option value="">
+                                    Select preference
+                                </option>
+
+                                <option value="remote">
+                                    Remote
+                                </option>
+
+                                <option value="onsite">
+                                    On-site
+                                </option>
+
+                                <option value="hybrid">
+                                    Hybrid
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="salary">
+                                Expected Salary
+                            </label>
+
+                            <input
+                                type="text"
+                                id="salary"
+                                name="salary"
+                                placeholder="Example: $800 - $1200"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     STEP 4
+                ========================== -->
+
+                <section class="form-step" id="step4">
+
+                    <h2>Skills & Languages</h2>
+
+                    <p class="step-description">
+                        Select your technical skills and languages.
+                    </p>
+
+
+                    <div class="skills-section">
+
+                        <h3>Technical Skills *</h3>
+
+                        <div class="checkbox-grid">
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="python"
+                                >
+                                Python
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="javascript"
+                                >
+                                JavaScript
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="html-css"
+                                >
+                                HTML & CSS
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="machine-learning"
+                                >
+                                Machine Learning
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="data-analysis"
+                                >
+                                Data Analysis
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="sql"
+                                >
+                                SQL
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="git"
+                                >
+                                Git & GitHub
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="react"
+                                >
+                                React
+                            </label>
+
+                        </div>
+
+
+                        <h3>Overall Skill Level</h3>
+
+                        <div class="range-container">
+
+                            <input
+                                type="range"
+                                id="skillLevel"
+                                name="skillLevel"
+                                min="0"
+                                max="100"
+                                value="50"
+                            >
+
+                            <span id="skillValue">
+                                50%
+                            </span>
+
+                        </div>
+
+
+                        <h3>Languages *</h3>
+
+                        <div class="checkbox-grid">
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="languages"
+                                    value="arabic"
+                                >
+                                Arabic
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="languages"
+                                    value="english"
+                                >
+                                English
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="languages"
+                                    value="french"
+                                >
+                                French
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="languages"
+                                    value="other"
+                                >
+                                Other
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     STEP 5
+                ========================== -->
+
+                <section class="form-step" id="step5">
+
+                    <h2>Experience & Projects</h2>
+
+                    <p class="step-description">
+                        Tell us about your previous experience and projects.
+                    </p>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="company">
+                                Previous Company
+                            </label>
+
+                            <input
+                                type="text"
+                                id="company"
+                                name="company"
+                                placeholder="Company name"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="jobTitle">
+                                Previous Job Title
+                            </label>
+
+                            <input
+                                type="text"
+                                id="jobTitle"
+                                name="jobTitle"
+                                placeholder="Job title"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="experienceDescription">
+                                Professional Experience
+                            </label>
+
+                            <textarea
+                                id="experienceDescription"
+                                name="experienceDescription"
+                                placeholder="Describe your previous experience..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="projects">
+                                Projects
+                            </label>
+
+                            <textarea
+                                id="projects"
+                                name="projects"
+                                placeholder="Describe your most important projects..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="portfolio">
+                                Portfolio Website
+                            </label>
+
+                            <input
+                                type="url"
+                                id="portfolio"
+                                name="portfolio"
+                                placeholder="https://yourportfolio.com"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="projectLink">
+                                Project / GitHub Link
+                            </label>
+
+                            <input
+                                type="url"
+                                id="projectLink"
+                                name="projectLink"
+                                placeholder="https://github.com/yourname/project"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     STEP 6
+                ========================== -->
+
+                <section class="form-step" id="step6">
+
+                    <h2>Documents & Final Details</h2>
+
+                    <p class="step-description">
+                        Upload your documents and complete your application.
+                    </p>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="cvFile">
+                                Resume / CV *
+                            </label>
+
+                            <input
+                                type="file"
+                                id="cvFile"
+                                name="cvFile"
+                                accept=".pdf"
+                                required
+                            >
+
+                            <small>
+                                PDF files only.
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="profilePhoto">
+                                Profile Photo
+                            </label>
+
+                            <input
+                                type="file"
+                                id="profilePhoto"
+                                name="profilePhoto"
+                                accept="image/*"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="certificates">
+                                Certificates
+                            </label>
+
+                            <input
+                                type="file"
+                                id="certificates"
+                                name="certificates"
+                                accept=".pdf,.jpg,.jpeg,.png"
+                                multiple
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="coverLetter">
+                                Cover Letter
+                            </label>
+
+                            <textarea
+                                id="coverLetter"
+                                name="coverLetter"
+                                placeholder="Tell us why you are interested in joining AI Tech Solutions..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="agreement">
+
+                            <label>
+
+                                <input
+                                    type="checkbox"
+                                    id="agreement"
+                                    name="agreement"
+                                    required
+                                >
+
+                                I confirm that the information provided
+                                in this application is accurate and complete.
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     NAVIGATION
+                ========================== -->
+
+                <div class="navigation-buttons">
+
+                    <button
+                        type="button"
+                        id="backButton"
+                        class="secondary-button"
+                    >
+                        Back
+                    </button>
+
+                    <button
+                        type="button"
+                        id="nextButton"
+                        class="primary-button"
+                    >
+                        Next
+                    </button>
+
+                    <button
+                        type="submit"
+                        id="submitButton"
+                        class="submit-button"
+                    >
+                        Submit Application
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         SUCCESS PAGE
+    ========================== -->
+
+    <section id="successPage" class="success-page">
+
+        <div class="success-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <p class="success-label">
+                APPLICATION RECEIVED
+            </p>
+
+            <h1>
+                Application Submitted Successfully!
+            </h1>
+
+            <p class="success-text">
+                Thank you for applying to AI Tech Solutions.
+                Your application has been received successfully.
+            </p>
+
+            <div class="success-info">
+
+                <strong>Application Status</strong>
+
+                <span>
+                    Your application is under review.
+                </span>
+
+            </div>
+
+            <p class="success-message">
+                Our recruitment team will review your application
+                and contact you if your qualifications match
+                one of our available opportunities.
+            </p>
+
+            <button
+                type="button"
+                id="submitAnotherButton"
+                class="primary-button"
+            >
+                Submit Another Application
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
